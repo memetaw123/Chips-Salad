@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chips Salad - Fresh & Crunchy</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-green-50 font-sans text-gray-800">
+
+  <header class="bg-green-600 text-white text-center py-10 shadow-md">
+    <img src="Logo.jpg" alt="Logo Chips Salad" class="mx-auto mb-4 w-40 h-40 rounded-full shadow-lg object-cover border-4 border-white" />
+    <h1 class="text-5xl font-bold">Chips Salad</h1>
+    <p class="mt-2 italic text-lg">Fresh, Healthy, & Delicious!</p>
+    <div class="mt-4">
+      <a href="index.html" class="inline-block bg-green-200 text-green-800 px-10 py-4 rounded-full shadow hover:bg-green-300 transition font-semibold text-lg">Lihat Menu &rarr;</a>
+    </div>
+  </header>
+
+
+  <section class="py-16 bg-white">
+    <h3 class="text-3xl font-bold text-center text-green-800 mb-12">Kenapa Pilih Chips Salad?</h3>
+    <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto px-6">
+      <div class="bg-green-50 rounded-lg p-6 text-center shadow hover:scale-105 transition">
+        <p class="text-5xl">🥗</p>
+        <h4 class="font-bold text-lg mt-4 text-green-700">Sayur Segar Organik</h4>
+        <p class="text-gray-500 mt-2">Kualitas bahan sayur segar, aman, tanpa pestisida.</p>
+      </div>
+      <div class="bg-green-50 rounded-lg p-6 text-center shadow hover:scale-105 transition">
+        <p class="text-5xl">🍟</p>
+        <h4 class="font-bold text-lg mt-4 text-green-700">Chips Homemade</h4>
+        <p class="text-gray-500 mt-2">Gurih, sehat, tanpa pengawet. Cocok teman santai.</p>
+      </div>
+      <div class="bg-green-50 rounded-lg p-6 text-center shadow hover:scale-105 transition">
+        <p class="text-5xl">💚</p>
+        <h4 class="font-bold text-lg mt-4 text-green-700">Hidup Lebih Sehat</h4>
+        <p class="text-gray-500 mt-2">Menu ringan tapi bergizi, jaga pola makan tanpa rasa bersalah.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="py-16 bg-green-50">
+    <h3 class="text-3xl font-bold text-center text-green-800 mb-10">Tentang Kami</h3>
+    <div class="max-w-6xl mx-auto px-6 flex justify-center">
+      <div class="bg-white p-8 rounded-lg shadow-md w-full">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-6 items-start">
+          <div>
+            <h4 class="text-xl font-bold text-green-700 mb-2">Kami Peduli Kesehatan Anda</h4>
+            <p class="text-gray-600 text-base">Chips Salad lahir dari kesadaran bahwa hidup sehat bisa tetap lezat. Semua produk dibuat dengan bahan pilihan, rendah minyak, tanpa MSG, tanpa bahan kimia.</p>
+          </div>
+          <div>
+            <h5 class="font-bold text-green-700 mb-2">Misi Kami</h5>
+            <p class="text-gray-600 text-base">Menyediakan makanan sehat, segar, dan praktis untuk semua kalangan, dengan cita rasa yang tetap lezat dan menggugah selera.</p>
+          </div>
+          <div>
+            <h5 class="font-bold text-green-700 mb-2">Info Kontak</h5>
+            <ul class="text-gray-700 text-base space-y-1">
+              <li><span class="font-semibold">Alamat:</span> Jl. Sehat No.1, Kota Salad</li>
+              <li><span class="font-semibold">WA:</span> 0898-7654-3210</li>
+              <li><span class="font-semibold">IG:</span> <a href="#" class="text-blue-600 underline">@chipssalad_id</a></li>
+            </ul>
+          </div>
+          <div>
+            <h5 class="font-bold text-green-700 mb-2 text-center">Tim Pembuat</h5>
+            <div class="flex flex-row flex-wrap justify-center gap-3">
+              <span class="text-green-800 font-semibold whitespace-nowrap">Ahmad Dafanda Abdullah</span>
+              <span class="text-green-800 font-semibold whitespace-nowrap">Muhammad Naufal Indrawan</span>
+              <span class="text-green-800 font-semibold whitespace-nowrap">Ammar</span>
+              <span class="text-green-800 font-semibold whitespace-nowrap">Ibnu Hafiz Asqolani</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-green-600 text-white text-center py-4">
+    <p>&copy; 2025 Chips Salad | #SehatBersamaSalad</p>
+  </footer>
+
+  <script>
+    function scrollToAbout() {
+      document.getElementById('about').scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+
+</body>
+</html>

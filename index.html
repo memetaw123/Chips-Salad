@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Chips Salad Menu</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-green-50 font-sans text-gray-800">
+  <header class="bg-green-700 text-white text-center py-6 shadow-md">
+    <h1 class="text-4xl font-bold">Chips Salad</h1>
+    <p class="mt-2 italic text-lg">Segar, Renyah, Lezat!</p>
+  </header>
+
+  <main class="max-w-5xl mx-auto py-10 px-4">
+    <section class="mb-10">
+      <h2 class="text-2xl font-bold text-green-700 mb-4">🍟 Pilihan Chips</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <button onclick="pilihMenu('chips', 'Lays')" id="btn-chips-Lays" class="menu-btn bg-white shadow rounded-lg p-4 text-center w-full hover:bg-yellow-100 transition font-semibold">
+          <img src="lays.jpg" alt="Lays" class="mx-auto mb-2 w-40 h-40 object-cover rounded-full shadow" />
+          Lays
+          <div class="text-gray-500 text-base font-normal">Rp 8.000</div>
+        </button>
+        <button onclick="pilihMenu('chips', 'Chitato')" class="bg-white shadow rounded-lg p-4 text-center w-full hover:bg-yellow-100 transition font-semibold">
+          <img src="chitato.jpg" alt="Chitato" class="mx-auto mb-2 w-40 h-40 object-cover rounded-full shadow" />
+          Chitato
+          <div class="text-gray-500 text-base font-normal">Rp 9.000</div>
+        </button>
+        <button onclick="pilihMenu('chips', 'Piatos')" class="bg-white shadow rounded-lg p-4 text-center w-full hover:bg-yellow-100 transition font-semibold">
+          <img src="piatos.jpg" alt="Piatos" class="mx-auto mb-2 w-40 h-40 object-cover rounded-full shadow" />
+          Piatos
+          <div class="text-gray-500 text-base font-normal">Rp 8.500</div>
+        </button>
+        <button onclick="pilihMenu('chips', 'Taro')" class="bg-white shadow rounded-lg p-4 text-center w-full hover:bg-yellow-100 transition font-semibold">
+          <img src="taro.jpg" alt="Taro" class="mx-auto mb-2 w-40 h-40 object-cover rounded-full shadow" />
+          Taro
+          <div class="text-gray-500 text-base font-normal">Rp 7.500</div>
+        </button>
+        <button onclick="pilihMenu('chips', 'Qtela')" class="bg-white shadow rounded-lg p-4 text-center w-full hover:bg-yellow-100 transition font-semibold">
+          <img src="qtela.jpg" alt="Qtela" class="mx-auto mb-2 w-40 h-40 object-cover rounded-full shadow" />
+          Qtela
+          <div class="text-gray-500 text-base font-normal">Rp 8.000</div>
+        </button>
+        <button onclick="pilihMenu('chips', 'Potabee')" class="bg-white shadow rounded-lg p-4 text-center w-full hover:bg-yellow-100 transition font-semibold">
+          <img src="potabee.jpg" alt="Potabee" class="mx-auto mb-2 w-40 h-40 object-cover rounded-full shadow" />
+          Potabee
+          <div class="text-gray-500 text-base font-normal">Rp 8.500</div>
+        </button>
+      </div>
+    </section>
+    <section class="mb-10">
+      <h2 class="text-2xl font-bold text-green-700 mb-4">🥗 Pilihan Varian Daging</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <button onclick="pilihMenu('daging', 'Chicken Crispy')" id="btn-daging-ChickenCrispy" class="menu-btn bg-white shadow rounded-lg p-4 text-center w-full hover:bg-green-100 transition font-semibold">
+          <img src="chicken.jpg" alt="Chicken Crispy" class="mx-auto mb-2 w-40 h-40 object-cover rounded-full shadow" />
+          Chicken Crispy
+          <div class="text-gray-500 text-base font-normal">Rp 13.000</div>
+        </button>
+        <button onclick="pilihMenu('daging', 'Beef Slice')" id="btn-daging-BeefSlice" class="menu-btn bg-white shadow rounded-lg p-4 text-center w-full hover:bg-green-100 transition font-semibold">
+          <img src="beef.jpg" alt="Beef Slice" class="mx-auto mb-2 w-40 h-40 object-cover rounded-full shadow" />
+          Beef Slice
+          <div class="text-gray-500 text-base font-normal">Rp 16.000</div>
+        </button>
+        <button onclick="pilihMenu('daging', 'Smoked Tuna')" id="btn-daging-SmokedTuna" class="menu-btn bg-white shadow rounded-lg p-4 text-center w-full hover:bg-green-100 transition font-semibold">
+          <img src="tuna.jpg" alt="Smoked Tuna" class="mx-auto mb-2 w-40 h-40 object-cover rounded-full shadow" />
+          Smoked Tuna
+          <div class="text-gray-500 text-base font-normal">Rp 15.000</div>
+        </button>
+      </div>
+    </section>
+    <section class="mb-10">
+      <h2 class="text-2xl font-bold text-green-700 mb-4">🥬 Pilihan Varian Sayur</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <button onclick="pilihMenu('sayur', 'Mix Lettuce')" id="btn-sayur-MixLettuce" class="menu-btn bg-white shadow rounded-lg p-4 text-center w-full hover:bg-green-100 transition font-semibold">
+          <img src="lettuce.jpg" alt="Mix Lettuce" class="mx-auto mb-2 w-40 h-40 object-cover rounded-full shadow" />
+          Mix Lettuce
+          <div class="text-gray-500 text-base font-normal">Rp 6.000</div>
+        </button>
+        <button onclick="pilihMenu('sayur', 'Spinach')" id="btn-sayur-Spinach" class="menu-btn bg-white shadow rounded-lg p-4 text-center w-full hover:bg-green-100 transition font-semibold">
+          <img src="spinach.jpg" alt="Spinach" class="mx-auto mb-2 w-40 h-40 object-cover rounded-full shadow" />
+          Spinach
+          <div class="text-gray-500 text-base font-normal">Rp 5.000</div>
+        </button>
+        <button onclick="pilihMenu('sayur', 'Baby Kale')" id="btn-sayur-BabyKale" class="menu-btn bg-white shadow rounded-lg p-4 text-center w-full hover:bg-green-100 transition font-semibold">
+          <img src="kale.jpg" alt="Baby Kale" class="mx-auto mb-2 w-40 h-40 object-cover rounded-full shadow" />
+          Baby Kale
+          <div class="text-gray-500 text-base font-normal">Rp 7.000</div>
+        </button>
+      </div>
+    </section>
+    <section class="mb-10">
+      <h2 class="text-2xl font-bold text-green-700 mb-4">🍯 Pilihan Varian Saus</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <button onclick="pilihMenu('saus', 'Sauce Mentai')" id="btn-saus-SauceMentai" class="menu-btn bg-white shadow rounded-lg p-4 text-center w-full hover:bg-green-100 transition font-semibold">
+          <img src="mentai.jpg" alt="Mentai Sauce" class="mx-auto mb-2 w-40 h-40 object-cover rounded-full shadow" />
+          Mentai Sauce
+          <div class="text-gray-500 text-base font-normal">Rp 2.000</div>
+        </button>
+        <button onclick="pilihMenu('saus', 'Hot Sauce')" id="btn-saus-HotSauce" class="menu-btn bg-white shadow rounded-lg p-4 text-center w-full hover:bg-green-100 transition font-semibold">
+          <img src="hot.jpg" alt="Hot Sauce" class="mx-auto mb-2 w-40 h-40 object-cover rounded-full shadow" />
+          Hot Sauce
+          <div class="text-gray-500 text-base font-normal">Rp 2.000</div>
+        </button>
+        <button onclick="pilihMenu('saus', 'Sauce Peanut')" id="btn-saus-SaucePeanut" class="menu-btn bg-white shadow rounded-lg p-4 text-center w-full hover:bg-green-100 transition font-semibold">
+          <img src="tomato.jpg" alt="Tomato Sauce" class="mx-auto mb-2 w-40 h-40 object-cover rounded-full shadow" />
+          Tomato Sauce
+          <div class="text-gray-500 text-base font-normal">Rp 2.000</div>
+        </button>
+      </div>
+    </section>
+    <section class="mb-10">
+      <h2 class="text-2xl font-bold text-green-700 mb-4">Pilihanmu:</h2>
+      <div id="hasilPilihan" class="bg-white rounded-lg shadow p-6 text-center text-lg text-green-800 min-h-[60px]">Belum ada pilihan.</div>
+      <div id="totalHarga" class="mt-2 text-xl font-bold text-green-700">Total: Rp 0</div>
+      <div class="flex flex-col md:flex-row justify-center gap-4 mt-6">
+        <a href="Introduce.html" class="w-full md:w-auto bg-green-200 text-green-800 px-10 py-4 rounded-full shadow hover:bg-green-300 transition font-bold text-lg text-center">&larr; Kembali</a>
+        <button onclick="konfirmasiPesanan()" class="w-full md:w-auto bg-green-600 text-white px-10 py-4 rounded-full shadow hover:bg-green-700 transition font-bold text-lg">OK</button>
+      </div>
+    </section>
+  </main>
+  <script>
+    const harga = {
+      chips: {
+        'Lays': 8000,
+        'Chitato': 9000,
+        'Piatos': 8500,
+        'Taro': 7500,
+        'Qtela': 8000,
+        'Potabee': 8500
+      },
+      daging: {
+        'Chicken Crispy': 13000,
+        'Beef Slice': 16000,
+        'Smoked Tuna': 15000
+      },
+      sayur: {
+        'Mix Lettuce': 6000,
+        'Spinach': 5000,
+        'Baby Kale': 7000
+      },
+      saus: {
+        'Sauce Mentai': 2000,
+        'Hot Sauce': 2000,
+        'Sauce Peanut': 2000,
+        'Tomato Sauce': 2000
+      }
+    };
+    const pilihan = { daging: null, sayur: null, saus: null, chips: null };
+    function pilihMenu(kategori, nama) {
+      pilihan[kategori] = nama;
+      let hasil = '';
+      if (pilihan.daging) hasil += `Daging: <b>${pilihan.daging}</b><br>`;
+      if (pilihan.sayur) hasil += `Sayur: <b>${pilihan.sayur}</b><br>`;
+      if (pilihan.saus) hasil += `Saus: <b>${pilihan.saus}</b><br>`;
+      if (pilihan.chips) hasil += `Chips: <b>${pilihan.chips}</b>`;
+      if (!hasil) hasil = 'Belum ada pilihan.';
+      document.getElementById('hasilPilihan').innerHTML = hasil;
+      updateTotal();
+      updateTandaPilihan();
+    }
+    function updateTotal() {
+      let total = 0;
+      if (pilihan.chips && harga.chips[pilihan.chips]) total += harga.chips[pilihan.chips];
+      if (pilihan.daging && harga.daging[pilihan.daging]) total += harga.daging[pilihan.daging];
+      if (pilihan.sayur && harga.sayur[pilihan.sayur]) total += harga.sayur[pilihan.sayur];
+      if (pilihan.saus && (harga.saus[pilihan.saus] || harga.saus['Tomato Sauce'] && pilihan.saus === 'Tomato Sauce')) total += harga.saus[pilihan.saus] || harga.saus['Tomato Sauce'];
+      document.getElementById('totalHarga').innerText = 'Total: Rp ' + total.toLocaleString('id-ID');
+    }
+    function updateTandaPilihan() {
+      // Reset semua tombol
+      document.querySelectorAll('.menu-btn').forEach(btn => {
+        btn.classList.remove('ring-4','ring-green-600','shadow-xl');
+      });
+      // Tambahkan tanda pada tombol yang dipilih
+      for (const kategori in pilihan) {
+        if (pilihan[kategori]) {
+          const id = `btn-${kategori}-${pilihan[kategori].replace(/\s+/g, '')}`;
+          const btn = document.getElementById(id);
+          if (btn) btn.classList.add('ring-4','ring-green-600','shadow-xl');
+        }
+      }
+    }
+    function konfirmasiPesanan() {
+      let pesan = 'Pesanan Anda:\n';
+      pesan += pilihan.daging ? `Daging: ${pilihan.daging}\n` : '';
+      pesan += pilihan.sayur ? `Sayur: ${pilihan.sayur}\n` : '';
+      pesan += pilihan.saus ? `Saus: ${pilihan.saus}\n` : '';
+      pesan += pilihan.chips ? `Chips: ${pilihan.chips}\n` : '';
+      let total = document.getElementById('totalHarga').innerText;
+      pesan += total ? `\n${total}` : '';
+      if (pesan === 'Pesanan Anda:\n') pesan = 'Belum ada pilihan yang dipilih!';
+      alert(pesan);
+    }
+    // Inisialisasi total saat pertama kali load
+    updateTotal();
+    updateTandaPilihan();
+  </script>
+
+  <footer class="bg-green-700 text-white text-center p-4">
+    <p>&copy; 2025 Chips Salad | IG: @chipsalad | WA: 085643445640</p>
+    <p>Alamat: Jl. Segar Sehat No. 12, Salad Town</p>
+  </footer>
+</body>
+</html>
